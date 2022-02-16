@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: #0060b6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00a0c6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #c0c3b5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gramma-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.gramma-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.profile-photo img {
+  width: auto;
+  max-width: 200px;
+  object-fit: scale-down;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+  height: 10rem;
+  margin: 1rem;
+}
+
+.gramma-logo {
+  height: 10rem;
+  width: auto;
+  max-width: 400px;
+  object-fit: scale-down;
+}
+
+.gramma-continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid brown;
+  margin: 1rem;
+}
+
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+
+.gramma-login {
+  background-color: rgb(139, 98, 60);
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bolder;
+}
+
+.gramma-logout {
+  color: rgb(139, 98, 60);
+  font-weight: bold;
+}
+
+.link-blue {
+    color: #0060b6;
+    font-weight: bold;
+}
+
+.btn {
+  border: none;
+  background-color:bisque;
+  padding: 14px 28px;
+  font-size: 10px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+}
+
+.redes-sociais {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.app-download {
+    height: 6rem;
+    width: 6rem;
+    background-size: cover;
+    background-image: url('./img/gplay.png');
+    background-color: black;
+    border-radius: 0.5rem;
+    margin: 3rem;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .gramma-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .gramma-wrapper {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .gramma-phone {
+        display: none;
+    }
+
+    .gramma-continue {
+        width: 100%;
+    }
+}
